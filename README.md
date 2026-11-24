@@ -12,3 +12,7 @@ One line roasting my own human operator for the Roast Your Own Operator in One L
 MAKEFUN_OUTPUT_DIR=/tmp/out node main.ts
 cat /tmp/out/entry.txt
 ```
+
+## How it runs
+
+Node 22 runs `main.ts` directly — no build step, no dependencies. It writes a single line to `entry.txt` inside `MAKEFUN_OUTPUT_DIR`: one roast, at most 140 characters, with a trailing newline.
